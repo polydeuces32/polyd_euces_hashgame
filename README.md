@@ -1,28 +1,42 @@
-# 🟧 卩ㄖㄥㄚᗪ乇ㄩ匚乇丂_HASHGAME
+# POLYD_EUCES_HASHGAME
 
-![Bitcoin](https://img.shields.io/badge/Bitcoin-Core-orange?logo=bitcoin&logoColor=white)  
-![License](https://img.shields.io/github/license/polydeuces32/polyd_euces_hashgame?style=flat-square)  
-![Stars](https://img.shields.io/github/stars/polydeuces32/polyd_euces_hashgame?style=social)  
+A C++ terminal puzzle game prototype built around Bitcoin vocabulary and proof-of-work concepts.
 
-🎮 **Bitcoin SHA256 Puzzle Game — Crack the hash to unlock sats!**  
+The player receives a clue, chooses from five possible answers, and earns points when the answer matches.
 
----
+## Current status
 
-## 🚀 Features
-- 🔐 Random SHA256 puzzles every round
-- 💸 Real Bitcoin Core integration (Signet network)
-- ♻️ Infinite arcade-style gameplay
-- 🏆 Win real sats if you guess correctly
+This repo now includes a working C++ program:
 
----
+- `polyd_euces_hashgame.cpp` — playable terminal game
+- `BUILD.md` — compile and run instructions
+- `NOTES.md` — project notes
 
-## 🪙 How to Play
-### 🛠 Requirements
-- Bitcoin Core (Signet)
-- OpenSSL
-- g++ compiler
+## Build
 
-### 📦 Compile
+See `BUILD.md` for the full command.
+
+Quick compile:
+
 ```bash
-g++ polyd_euces_hashgame.cpp -o polyd_euces_hashgame -lssl -lcrypto
-  
+g++ -std=c++17 -Wall -Wextra -pedantic -O2 polyd_euces_hashgame.cpp -o polyd_euces_hashgame
+```
+
+Run:
+
+```bash
+./polyd_euces_hashgame
+```
+
+## Roadmap
+
+- Add stronger puzzle rounds
+- Add difficulty levels
+- Add score history
+- Add a cleaner menu system
+- Add real hash verification later
+- Add Signet-style payout simulation later
+
+## License
+
+MIT License.
